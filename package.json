@@ -1,0 +1,32 @@
+{
+  "name": "Access-Control-lab-14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage " ,
+    "lint" : "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goorob-401-advanced-javascript/Access-Control-lab-14.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goorob-401-advanced-javascript/Access-Control-lab-14/issues"
+  },
+  "homepage": "https://github.com/Goorob-401-advanced-javascript/Access-Control-lab-14#readme",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "bcrypt": "^3.0.8",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1",
+    "morgan": "^1.9.1",
+    "superagent": "^5.2.1"
+  }
+}
