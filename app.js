@@ -3,16 +3,19 @@
 
 require('dotenv').config();
 const express = require('express');
+const morgan = require('morgan');
+const cors = require('cors');
 const basicAuth = require('./basic-auth-middleware.js');
 const oauthMidd = require('./oauth-middleware.js');
 const User = require('./user.js');
 const bearerAuth = require('./bearer-auth-middleware');
 const acl = require('./bearer-auth-middleware');
-
+const dynamicRouter = require("./routes/v1.js") ;
 const app = express();
 
 app.use(express.json());
 app.use(express.static('./public'));
+app.use(dynamicRouter); 
 app.post('/signup', (req, res , next) => {
   let user = new User(req.body);
   user.save()

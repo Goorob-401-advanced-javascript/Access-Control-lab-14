@@ -3,7 +3,7 @@
 require('dotenv').config();
 const app = require('./app.js');
 const mongoose = require('mongoose');
-const MONGODB_URI = 'mongodb://localhost:27017/authentication';
+const MONGODB_URI = 'mongodb://localhost:27017/lab15';
 
 const PORT = process.env.PORT;
 
